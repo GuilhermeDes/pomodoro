@@ -26,12 +26,12 @@
         <!--Imagem de pomodoro-->
         <img src="img/pomodoro.png" style="width: 150px; height: 150px; margin-top: 15px;">
         <!--Temporizador-->
-        <div class="temporizador">25:00</div>
+        <div class="temporizador" id='tempo'></div>
         <!--Botões-->
         <div class="btn">
-            <button class="start">Começar</button>
-            <button class="pause">Pausar</button>
-            <button class="stop">Parar</button>
+            <button class="start" onclick="pomodoro()">Iniciar</button>
+            <button class="pause" onclick="">Intervalo</button>
+            <button class="stop" onclick="executandoAcao()">Reiniciar</button>
         </div>
         <!--Divisão de carregamento de porgresso-->
         <div class="load">
@@ -63,6 +63,8 @@
     <!--Credito-->
     <footer>Desenvolvido por Guilherme Araujo</footer>
 
+    <!--Script-->
+    <script src="js/script.js"></script>
 </body>
 
 </html>

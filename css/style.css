@@ -191,16 +191,19 @@ a:link {
     margin-right: 5px;
     width: 80px;
     height: 50px;
+    text-align: center;
   }
   .pause {
     margin-right: 5px;
     width: 80px;
     height: 50px;
+    text-align: center;
   }
   .stop {
     margin-right: 5px;
     width: 80px;
     height: 50px;
+    text-align: center;
   }
   .load {
     font-size: 20px;
