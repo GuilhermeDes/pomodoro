@@ -17,6 +17,9 @@ contador = window.setInterval(function(){
     console.log(tempoRestante);
 }, 1000);
 }
-
 /*Intervalo*/
-/*Reset*/
+
+ //reset 
+ function reset() {
+    document.getElementById('tempo').innerText = '00:00';
+ }
