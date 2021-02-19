@@ -1,6 +1,6 @@
 /*Estudos*/
-function pomodoro() {
-var tempoEmMinutos = 1;
+function iniciar() {
+var tempoEmMinutos = 25;
 var expiracao = new  Date(new Date().getTime() + tempoEmMinutos * 60000);
 
 console.log(expiracao);
@@ -8,6 +8,7 @@ contador = window.setInterval(function(){
     faltam = expiracao - new Date();
     if (faltam <= 0){
     	window.clearInerval(contador);
+        console.log("Prazo expirado");
     }
     minutos = Math.floor(faltam / 60000);
     segundos = faltam % 60000;
@@ -16,5 +17,6 @@ contador = window.setInterval(function(){
     console.log(tempoRestante);
 }, 1000);
 }
+
 /*Intervalo*/
 /*Reset*/
