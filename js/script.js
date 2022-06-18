@@ -1,4 +1,5 @@
 /*Estudos*/
+
 function iniciar() {
 var tempoEmMinutos = 25;
 var expiracao = new  Date(new Date().getTime() + tempoEmMinutos * 60000);
@@ -7,7 +8,7 @@ console.log(expiracao);
 contador = window.setInterval(function(){
     faltam = expiracao - new Date();
     if (faltam <= 0){
-    	window.clearInerval(contador);
+    	window.clearInterval(contador);
         console.log("Prazo expirado");
     }
     minutos = Math.floor(faltam / 60000);
@@ -17,9 +18,12 @@ contador = window.setInterval(function(){
     console.log(tempoRestante);
 }, 1000);
 }
-/*Intervalo*/
 
- //reset 
- function reset() {
+function pause() {
+    
+}
+
+function reset() {
     document.getElementById('tempo').innerText = '00:00';
+    window.clearInterval(contador);
  }

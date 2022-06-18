@@ -175,6 +175,10 @@ a:link {
   text-decoration: none;
   color: brown;
 }
+a:visited {
+  text-decoration: none;
+  color: brown;
+}
 
 /*Responsivo*/
 
